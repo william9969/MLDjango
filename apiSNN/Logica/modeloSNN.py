@@ -44,8 +44,8 @@ class modeloSNN():
         img = self.preprocesamiento(self, path=path)
         certeza,predicion = self.predict(self, img)
         print('La prediccion es ',predicion )
-        #dbReg = models.Image(image=path, label=prediction_result, probability=maxElement)
-        #dbReg.save()
+        db=models.Image(image=path,label=predicion,probability=certeza)
+        db.save()
         return (certeza,predicion)
 
     def predict(self, imgT):

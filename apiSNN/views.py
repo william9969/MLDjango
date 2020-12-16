@@ -25,22 +25,7 @@ config = {
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
-class UploadImage():
-    def image_view(request):
-        if request.method == 'POST':
-            form = forms.ImageForm(request.POST, request.FILES)
-            
-        return render(request, 'deportes.html')
-
-    def success(request):
-        path = request.POST.get('image')
-        print(path)
-        #Predecir imagen
-        predecirDeportes(request)
-
 class Clasificacion():
-    #imagen = models.ImageField(upload_to='imagenes')
-    #prediccion = models.CharField(max_length=200, blank=True)
 
     def determinarDeporte(request):
         context={'a':1}
@@ -54,5 +39,5 @@ class Clasificacion():
         filePathName=fs.url(filePathName)
         #testimage='.'+filePathName
         #img = image.load_img(testimage)
-        resultado= modeloSNN.modeloSNN.predecirDeporte(modeloSNN.modeloSNN,filePathName)
-        return render(request, "prediccion.html")#,{"e":resul})
+        certeza, prediccion= modeloSNN.modeloSNN.predecirDeporte(modeloSNN.modeloSNN,filePathName)
+        return render(request, "prediccion.html",{"pre":prediccion,"c":certeza})

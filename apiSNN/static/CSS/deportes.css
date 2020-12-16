@@ -1,0 +1,29 @@
+body{
+    background: url("/static/Imagenes/fo.jpg") no-repeat center center fixed;
+    
+    background-size: cover;
+}
+ body .hhh{
+    margin-top: 5%;
+    color: white;
+    margin-left: 25%;
+    width: 50%;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+.hhna{
+    align-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: 0.8; 
+     background-color: cadetblue;
+}
+
+.hhna .pre{
+    height: 35px;
+    color: black;
+    width: 40%;
+    opacity: 1.0;
+    border-radius: 10px;
+}

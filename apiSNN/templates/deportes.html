@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/deportes.css" />
     <title>Document</title>
 </head>
 <body>
 
-
-    <h2>Uplaod Image for Classification</h2>
-
+    <header class="hhh" >
+    <h2>SNN: Clasificacion Deportes</h2>
+    <header>
     
     <br>
-   
+   <nav class="hhna">
     <form method="post" action="/apiSNN/predecirDeporte/" enctype="multipart/form-data">
-    {% csrf_token %}
-    <div class="col-md-4 col-sm-4">
-        <label >Upload Image File Here:</label> </div> <input name="file" type="file"><br><br>
-    <br>
-    <input type="submit" value="predecirDeporte" ></div>
-
-    <!--<h2>The classification of the image is {{predictedLabel}}</h2>
-    <img src={{filePathName}} alt='imagename'>
-    {{filePathName}}
-    -->
+        {% csrf_token %}
+        <div class="col-md-4 col-sm-4">
+            <label >Suba la Imagen Aqui:</label> </div> <input name="file" type="file"><br>
+        <br>
+        <input class="pre" type="submit" value="Predecir Deporte" ></div>
+        <br>
     </form>
+    </nav>
     <br>
     
 </body>

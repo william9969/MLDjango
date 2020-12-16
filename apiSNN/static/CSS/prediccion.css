@@ -1,0 +1,27 @@
+body {
+    margin-top: 5%;
+    color: black;
+    margin-left: 25%;
+    width: 50%;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #D3D0CB ;
+}
+
+h1 {
+    background-color: #393E41;
+    color: darkgrey;
+}
+.content {
+    align-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: 0.8; 
+    background-color: cadetblue;
+}
+
+.container {
+    align-content: left;
+    background-color: #F4F1BB;
+}
