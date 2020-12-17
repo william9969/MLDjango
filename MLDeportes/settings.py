@@ -29,7 +29,7 @@ SECRET_KEY = 'wk@2_fspkot4*$8a@sa6h(rql+scwve(2h#^lg7m$=w7i2+9@1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','proyectomldeportes.uc.r.appspot.com','proyectomldeportes.appspot.com']
 
 
 # Application definition

@@ -12,11 +12,15 @@ from apiSNN.Logica import modeloSNN #para utilizar modelo SNN
 
 config = {
 
-    'apiKey': "AIzaSyDBYpL2tb3yh3SIPo2BFhlS7slKruVGOic",
+    'apiKey': "4/1AY0e-g4bsh3PT_PT4wJyasp5cdYKbzR5zGuOlcvAJQz3Oiaq2xqgDUXO1AM",
     'authDomain': "proyectotiendajpri.firebaseapp.com",
     'databaseURL': "https://proyectotiendajpri.firebaseio.com",
-    'projectId': "proyectotiendajpri",
-    'storageBucket': "proyectotiendajpri.appspot.com",
+    'projectId': "proyectomldeportes",
+    'storageBucket': "proyectomldeportes.uc.r.appspot.com",
+    'messagingSenderId': "107199634301892604971",
+    'appId': "1:1046831721926:web:7402a636a8cd165f4b16c7",
+    'measurementId': "G-MKSCN84RDE",
+    'storageBucket': "proyectomldeportes.uc.r.appspot.com",
     'messagingSenderId': "1046831721926",
     'appId': "1:1046831721926:web:7402a636a8cd165f4b16c7",
     'measurementId': "G-MKSCN84RDE"
